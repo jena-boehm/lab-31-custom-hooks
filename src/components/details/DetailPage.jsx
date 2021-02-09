@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const DetailPage = () => {
   return (
     <div>
-            
+          Details  
     </div>
   );
 };

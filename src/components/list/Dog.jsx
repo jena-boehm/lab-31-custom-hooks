@@ -8,7 +8,7 @@ const Dog = ({ id, name, image }) => {
       <figure>
         <figcaption>{name}</figcaption>
         <Link to={`/breeds/${id}`}>
-          <img src={image} alt={name} />
+          <img src={image} alt={name} width="300px" />
         </Link>
       </figure>
       <div>Hello</div>

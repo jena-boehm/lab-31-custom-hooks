@@ -14,7 +14,7 @@ exports[`DogList component renders DogList 1`] = `
         <img
           alt="logo"
           class="logo"
-          src="pawprint.png"
+          src="/path/image"
           width="70px"
         />
         <a

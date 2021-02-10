@@ -1,16 +1,13 @@
+/* eslint-disable max-len */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Loading = () => {
   return (
     <div>
-         Loading   
+      <img src="https://media.giphy.com/media/Y0g7w7UZwrmpQ9GW3m/giphy.gif" alt="loading" /> 
+      <h2>Loading...</h2>
     </div>
   );
-};
-
-Loading.propTypes = {
-
 };
 
 export default Loading;

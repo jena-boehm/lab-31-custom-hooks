@@ -16,8 +16,8 @@ const Dog = ({ name, image }) => {
 };
 
 Dog.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  name: PropTypes.string,
+  image: PropTypes.string
 };
 
 export default Dog;

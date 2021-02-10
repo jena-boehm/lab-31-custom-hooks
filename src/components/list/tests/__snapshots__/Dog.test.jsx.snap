@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dog component renders Dog 1`] = `
+<DocumentFragment>
+  <figure>
+    <figcaption />
+    <a
+      href="/breeds/undefined"
+    >
+      <img
+        width="300px"
+      />
+    </a>
+  </figure>
+</DocumentFragment>
+`;

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useDogs } from '../hooks/dogs';
 import Loading from '../components/loading/Loading';
 import Details from '../components/details/Details';
+import Header from '../components/header/Header';
 
 const DetailPage = ({ match }) => {
   // const { loading, dog } = useCharacterDetails(match.params.name);
@@ -10,18 +11,21 @@ const DetailPage = ({ match }) => {
   const { loading, dogs } = useDogs();
   const dog = dogs.find(dog => dog.name === match.params.name);
 
-  console.log(dog);
-
   if(loading) return <Loading />;
-  return <Details {...dog} />;
+  return (
+    <>
+      <Header />
+      <Details {...dog} />
+    </>
+  );
 };
 
 DetailPage.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      name: PropTypes.string.isRequired
-    }).isRequired
-  }).isRequired
+      name: PropTypes.string
+    })
+  })
 };
 
 export default DetailPage;

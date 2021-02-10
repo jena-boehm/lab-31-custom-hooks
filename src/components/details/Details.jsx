@@ -14,11 +14,11 @@ const Details = ({ name, temperament, lifeSpan, origin, image }) => {
 };
 
 Details.propTypes = {
-  name: PropTypes.string.isRequired,
-  temperament: PropTypes.string.isRequired,
-  lifeSpan: PropTypes.string.isRequired,
-  origin: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  temperament: PropTypes.string,
+  lifeSpan: PropTypes.string,
+  origin: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default Details;

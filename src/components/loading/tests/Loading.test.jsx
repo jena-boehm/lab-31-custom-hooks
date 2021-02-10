@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import DogList from '../DogList';
+import Loading from '../Loading';
 
-describe('DogList component', () => {
+describe('Loading component', () => {
   afterEach(() => cleanup());
-  it('renders DogList', () => {
-    const { asFragment } = render(<DogList />);
+  it('renders Loading', () => {
+    const { asFragment } = render(<Loading />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

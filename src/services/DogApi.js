@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 const myHeaders = new Headers();
 
 myHeaders
@@ -11,13 +10,29 @@ export const getDogsByBreed = async() => {
     headers: myHeaders
   })
     .then(res => res.json())
-    .then((breeds) => 
-      breeds.map((result) => ({
+    .then((dogs) => 
+      dogs.map((result) => ({
         id: result.id,
         name: result.name,
+        image: result.image.url,
         temperament: result.temperament,
         lifeSpan: result.life_span,
-        origin: result.origin,
-        image: result.image.url 
+        origin: result.origin, 
       })));
 };
+
+export const getDetailsByName = (name) => {
+  return fetch(`https://api.thedogapi.com/v1/breeds/search?q=${name}`, {
+    method: 'GET',
+    headers: myHeaders
+  })
+    .then(res => res.json())
+    .then(([result]) => ({
+      name: result.name,
+      temperament: result.temperament,
+      lifeSpan: result.life_span,
+      origin: result.origin,
+      image: result.reference_image_id
+    }));
+};
+

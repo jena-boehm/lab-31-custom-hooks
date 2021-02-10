@@ -4,7 +4,7 @@ import Dog from './Dog';
 
 const DogList = ({ dogs }) => {
   const renderDogs = dogs.map(dog => (
-    <li key={dog.id}>
+    <li key={dog.name}>
       <Dog 
         name={dog.name}
         image={dog.image} />
@@ -18,7 +18,6 @@ const DogList = ({ dogs }) => {
 
 DogList.propTypes = {
   dogs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired
   })).isRequired

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getDogsByBreed } from '../services/DogApi';
+import { getDetailsByName, getDogsByBreed } from '../services/DogApi';
 
 export const useDogs = () => {
   const [loading, setLoading] = useState(true);
@@ -16,5 +16,23 @@ export const useDogs = () => {
   return {
     loading,
     dogs
+  };
+};
+
+export const useCharacterDetails = name => {
+  const [loading, setLoading] = useState(true);
+  const [dog, setDog] = useState({});
+
+  useEffect(() => {
+    getDetailsByName(name)
+      .then(dog => {
+        setDog(dog);
+        setLoading(false);
+      });
+  }, [name]);
+
+  return {
+    loading,
+    dog
   };
 };

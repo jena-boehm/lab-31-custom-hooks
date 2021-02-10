@@ -5,7 +5,7 @@ import {
   Switch
 } from 'react-router-dom';
 import HomePage from '../../containers/HomePage';
-import DetailPage from '../details/DetailPage.jsx';
+import DetailPage from '../../containers/DetailPage.jsx';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
             exact
             component={HomePage} />
           <Route
-            path="/breeds/:id"
+            path="/breeds/:name"
             exact
             component={DetailPage} />
         </Switch>

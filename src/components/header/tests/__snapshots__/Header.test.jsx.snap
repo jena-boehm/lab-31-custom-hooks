@@ -8,7 +8,7 @@ exports[`Header component renders Header 1`] = `
     <img
       alt="logo"
       class="logo"
-      src="../../../pawprint.png"
+      src="./pawprint.png"
       width="70px"
     />
     <a

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <img 
-        src="../../../pawprint.png" 
+        src="./pawprint.png" 
         alt="logo" 
         width="70px" 
         className={styles.logo} />

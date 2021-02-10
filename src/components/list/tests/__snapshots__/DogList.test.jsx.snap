@@ -34,7 +34,25 @@ exports[`DogList component renders DogList 1`] = `
         <ul
           class="ul"
           data-testid="dogs"
-        />
+        >
+          <li>
+            <figure
+              class="listItem"
+            >
+              <figcaption
+                class="name"
+              />
+              <a
+                href="/breeds/undefined"
+              >
+                <img
+                  class="image"
+                  height="200px"
+                />
+              </a>
+            </figure>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

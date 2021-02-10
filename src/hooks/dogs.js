@@ -19,7 +19,7 @@ export const useDogs = () => {
   };
 };
 
-export const useCharacterDetails = name => {
+export const useDogDetails = name => {
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState({});
 

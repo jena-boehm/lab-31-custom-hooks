@@ -6,7 +6,6 @@ import Details from '../components/details/Details';
 import Header from '../components/header/Header';
 
 const DetailPage = ({ match }) => {
-  // const { loading, dog } = useCharacterDetails(match.params.name);
 
   const { loading, dogs } = useDogs();
   const dog = dogs.find(dog => dog.name === match.params.name);

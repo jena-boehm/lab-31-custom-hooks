@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../app/styles/App.css';
+import logo from '../../../public/pawprint.png';
 
 const Header = () => {
   return (
     <div className={styles.header}>
       <img 
-        src="pawprint.png" 
+        src={logo}
         alt="logo" 
         width="70px" 
         className={styles.logo} />

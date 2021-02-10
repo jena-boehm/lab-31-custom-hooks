@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dog from './Dog';
 import Header from '../header/Header';
+import styles from '../app/styles/App.css';
 
 const DogList = ({ dogs }) => {
   const renderDogs = dogs.map(dog => (
@@ -13,12 +14,19 @@ const DogList = ({ dogs }) => {
   ));
 
   return (
-    <>
-      <Header />
-      <ul data-testid="dogs">
-        {renderDogs}
-      </ul>
-    </>
+    <div className={styles.app}>
+      <div className={styles.headerContainer}>
+        <Header />
+      </div>
+      <div className={styles.body}>
+        <div className={styles.list}>
+          <ul data-testid="dogs"
+            className={styles.ul}>
+            {renderDogs}
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
 

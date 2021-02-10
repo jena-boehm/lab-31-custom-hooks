@@ -2,13 +2,18 @@
 
 exports[`Dog component renders Dog 1`] = `
 <DocumentFragment>
-  <figure>
-    <figcaption />
+  <figure
+    class="listItem"
+  >
+    <figcaption
+      class="name"
+    />
     <a
       href="/breeds/undefined"
     >
       <img
-        width="300px"
+        class="image"
+        height="200px"
       />
     </a>
   </figure>

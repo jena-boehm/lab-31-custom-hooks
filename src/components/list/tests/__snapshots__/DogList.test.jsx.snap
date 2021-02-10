@@ -2,15 +2,41 @@
 
 exports[`DogList component renders DogList 1`] = `
 <DocumentFragment>
-  <div>
-    <a
-      href="/"
+  <div
+    class="app"
+  >
+    <div
+      class="headerContainer"
     >
-      Home
-    </a>
+      <div
+        class="header"
+      >
+        <img
+          alt="logo"
+          class="logo"
+          src="../../../pawprint.png"
+          width="70px"
+        />
+        <a
+          class="headerLink"
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </div>
+    <div
+      class="body"
+    >
+      <div
+        class="list"
+      >
+        <ul
+          class="ul"
+          data-testid="dogs"
+        />
+      </div>
+    </div>
   </div>
-  <ul
-    data-testid="dogs"
-  />
 </DocumentFragment>
 `;

@@ -2,14 +2,19 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="loading"
+  >
     <img
       alt="loading"
       src="https://media.giphy.com/media/Y0g7w7UZwrmpQ9GW3m/giphy.gif"
+      width="700px"
     />
-    <h2>
+    <div
+      class="loadingText"
+    >
       Loading...
-    </h2>
+    </div>
   </div>
 </DocumentFragment>
 `;

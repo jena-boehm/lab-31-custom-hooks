@@ -3,19 +3,36 @@
 exports[`Details component renders Details 1`] = `
 <DocumentFragment>
   <figure>
-    <figcaption />
-    <img
-      width="400px"
+    <figcaption
+      class="nameHeader"
     />
-    <p>
-      Temperament: 
-    </p>
-    <p>
-      Life Span: 
-    </p>
-    <p>
-      Origin: 
-    </p>
+    <img
+      width="600px"
+    />
   </figure>
+  <div
+    class="details"
+  >
+    <span
+      class="detailLabel"
+    >
+      Temperament: 
+    </span>
+    <span />
+    <br />
+    <span
+      class="detailLabel"
+    >
+      Life Span: 
+    </span>
+    <span />
+    <br />
+    <span
+      class="detailLabel"
+    >
+      Bred For: 
+    </span>
+    <span />
+  </div>
 </DocumentFragment>
 `;

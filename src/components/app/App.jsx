@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 import HomePage from '../../containers/HomePage';
 import DetailPage from '../../containers/DetailPage.jsx';
-import Header from '../header/Header';
 
 const App = () => {
   return (

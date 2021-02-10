@@ -2,8 +2,17 @@
 
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="header"
+  >
+    <img
+      alt="logo"
+      class="logo"
+      src="../../../pawprint.png"
+      width="70px"
+    />
     <a
+      class="headerLink"
       href="/"
     >
       Home

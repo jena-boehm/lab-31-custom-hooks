@@ -18,6 +18,7 @@ export const getDogsByBreed = async() => {
         temperament: result.temperament,
         lifeSpan: result.life_span,
         origin: result.origin, 
+        bredFor: result.bred_for
       })));
 };
 
@@ -32,6 +33,7 @@ export const getDetailsByName = (name) => {
       temperament: result.temperament,
       lifeSpan: result.life_span,
       origin: result.origin,
+      bredFor: result.bred_for,
       image: result.reference_image_id
     }));
 };

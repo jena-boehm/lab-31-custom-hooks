@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogList component renders DogList 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      href="/"
+    >
+      Home
+    </a>
+  </div>
+  <ul
+    data-testid="dogs"
+  />
+</DocumentFragment>
+`;

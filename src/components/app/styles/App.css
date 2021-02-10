@@ -1,0 +1,140 @@
+.app {
+    background-color: black;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width:80%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #C0C3D8;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.headerContainer {
+    width: 80%;
+}
+
+.header {
+    border: 1px solid black;
+    height: 6em;
+    width: 100%;
+    box-shadow: gray 0px 1px 3px 0px;
+    margin-bottom: 1em;
+    margin-top: .8em;
+    background-color: #C0C3D8;
+}
+
+.headerLink {
+    float: right;
+    padding: 3%;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.logo {
+    margin: 1em;
+}
+
+.listItem {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 320px;
+    text-align: center;
+    padding: .6em;
+    margin: .6em;
+    box-shadow: gray 1px 1px 4px;
+    background-color: white;
+}
+
+.listItem:hover {
+    transform: scale(.98);
+}
+
+.listItem:active {
+    transform: scale(.93);
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.name {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+
+.nameHeader {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.image {
+    border: 2px solid black;
+}
+
+.detailContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width:80%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #C0C3D8;
+    margin-bottom: 3em;
+}
+
+.details {
+    text-align: left;
+    width: 60%;
+    line-height: 3em;
+    margin-left: 12em;
+    margin-bottom: 5em;
+    background-color: #C0C3D8;
+}
+
+.detailLabel {
+    font-weight: bold;
+}
+
+.figure {
+    margin: 0;
+    padding: 0;
+}
+
+.loading {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingText {
+    font-size: 4em;
+    text-align: center;
+}

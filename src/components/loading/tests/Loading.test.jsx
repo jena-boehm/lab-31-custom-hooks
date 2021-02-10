@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Details from '../Details';
+import Loading from '../Loading';
 
-describe('Details component', () => {
+describe('Loading component', () => {
   afterEach(() => cleanup());
-  it('renders Details', () => {
-    const { asFragment } = render(<Details />);
+  it('renders Loading', () => {
+    const { asFragment } = render(<Loading />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

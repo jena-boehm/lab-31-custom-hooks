@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component renders Details 1`] = `
+<DocumentFragment>
+  <figure>
+    <figcaption
+      class="nameHeader"
+    />
+    <img
+      width="600px"
+    />
+  </figure>
+  <div
+    class="details"
+  >
+    <span
+      class="detailLabel"
+    >
+      Temperament: 
+    </span>
+    <span />
+    <br />
+    <span
+      class="detailLabel"
+    >
+      Life Span: 
+    </span>
+    <span />
+    <br />
+    <span
+      class="detailLabel"
+    >
+      Bred For: 
+    </span>
+    <span />
+  </div>
+</DocumentFragment>
+`;

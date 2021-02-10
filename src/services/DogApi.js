@@ -1,8 +1,9 @@
 const myHeaders = new Headers();
+const API_KEY = process.env.API_KEY;
 
 myHeaders
   .append('Authorization', 
-    'Bearer 1544caee-0010-41ae-92cb-28cbee4c0e70');
+    `Bearer ${API_KEY}`);
 
 export const getDogsByBreed = async() => {
   return await fetch('https://api.thedogapi.com/v1/breeds', {

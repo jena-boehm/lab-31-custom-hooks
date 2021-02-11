@@ -22,9 +22,13 @@ const Header = () => {
       <Link 
         to="/"
         className={styles.headerLink}>Home</Link> 
-      <input 
-        type="checkbox" 
-        onChange={changeTheme} />
+      <div className={styles.toggleContainer}>
+        <span>Check to toggle light/dark mode:</span>
+        <input 
+          className={styles.headerLink}
+          type="checkbox" 
+          onChange={changeTheme} />
+      </div>
     </div>
   );
 };

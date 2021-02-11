@@ -138,3 +138,14 @@
     font-size: 4em;
     text-align: center;
 }
+
+.light {
+    background-color: #C0C3D8;
+    color: black
+}
+
+.dark {
+    background-color: black;
+    color: #C0C3D8;
+}
+

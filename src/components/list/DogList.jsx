@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 import Dog from './Dog';
 import Header from '../header/Header';
 import styles from '../app/styles/App.css';
+import { useTheme } from '../../state/themeContext';
 
 const DogList = ({ dogs }) => {
+  const { theme, toggleTheme } = useTheme();
+
   const renderDogs = dogs.map(dog => (
     <li key={dog.name}>
       <Dog 
@@ -14,7 +17,7 @@ const DogList = ({ dogs }) => {
   ));
 
   return (
-    <div className={styles.app}>
+    <div className={styles[theme]}>
       <div className={styles.headerContainer}>
         <Header />
       </div>

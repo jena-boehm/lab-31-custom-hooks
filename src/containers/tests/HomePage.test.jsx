@@ -6,6 +6,7 @@ import { setupServer } from 'msw/node';
 import dogsJSON from '../../fixtures/dogs.json';
 import { MemoryRouter } from 'react-router-dom';
 import HomePage from '../HomePage';
+import { ThemeProvider } from '../../state/themeContext';
 
 const server = setupServer(
   rest.get('https://api.thedogapi.com/v1/breeds', (req, res, ctx) => {
@@ -19,9 +20,11 @@ describe('HomePage container', () => {
 
   it('fetches and displays a list of dog breeds', async() => {
     render(
-      <MemoryRouter>
-        <HomePage />
-      </MemoryRouter>
+      <ThemeProvider>
+        <MemoryRouter>
+          <HomePage />
+        </MemoryRouter>
+      </ThemeProvider>
     );
 
     screen.getByAltText('loading');

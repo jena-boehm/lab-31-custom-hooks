@@ -7,6 +7,7 @@ import { setupServer } from 'msw/node';
 import dogByName from '../../fixtures/dogByName.json';
 import DetailPage from '../DetailPage';
 import { MemoryRouter } from 'react-router-dom';
+import { ThemeProvider } from '../../state/themeContext';
 
 const server = setupServer(
   rest.get('https://api.thedogapi.com/v1/breeds/search?q=Golden%20Retriever', 
@@ -21,9 +22,11 @@ describe('DetailPage container', () => {
 
   it('fetches and displays dog details', async() => {
     render(
-      <MemoryRouter>
-        <DetailPage match={{ params: { name: 'Golden Retriever' } }} />
-      </MemoryRouter>);
+      <ThemeProvider>
+        <MemoryRouter>
+          <DetailPage match={{ params: { name: 'Golden Retriever' } }} />
+        </MemoryRouter>
+      </ThemeProvider>);
 
     screen.getByAltText('loading');
 

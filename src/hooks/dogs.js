@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getDetailsByName, getDogsByBreed } from '../services/DogApi';
+import { getDetailsByName, getDogsByBreed } from '../state/DogApi';
 
 export const useDogs = () => {
   const [loading, setLoading] = useState(true);

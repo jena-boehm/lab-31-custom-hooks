@@ -5,15 +5,18 @@ import Loading from '../components/loading/Loading';
 import Details from '../components/details/Details';
 import Header from '../components/header/Header';
 import styles from '../components/app/styles/App.css';
+import { useTheme } from '../state/themeContext';
 
 const DetailPage = ({ match }) => {
 
   const { loading, dogs } = useDogs();
+  const { theme, toggleTheme } = useTheme();
+
   const dog = dogs.find(dog => dog.name === match.params.name);
 
   if(loading) return <Loading />;
   return (
-    <div className={styles.app}>
+    <div className={styles[theme]}>
       <div className={styles.headerContainer}>
         <Header />
       </div>

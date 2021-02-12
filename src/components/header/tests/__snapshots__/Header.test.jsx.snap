@@ -17,6 +17,17 @@ exports[`Header component renders Header 1`] = `
     >
       Home
     </a>
+    <div
+      class="toggleContainer"
+    >
+      <span>
+        Check to toggle light/dark mode:
+      </span>
+      <input
+        class="headerLink"
+        type="checkbox"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

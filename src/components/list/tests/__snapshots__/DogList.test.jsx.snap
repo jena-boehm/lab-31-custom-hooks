@@ -3,7 +3,7 @@
 exports[`DogList component renders DogList 1`] = `
 <DocumentFragment>
   <div
-    class="app"
+    class="dark"
   >
     <div
       class="headerContainer"
@@ -23,6 +23,17 @@ exports[`DogList component renders DogList 1`] = `
         >
           Home
         </a>
+        <div
+          class="toggleContainer"
+        >
+          <span>
+            Check to toggle light/dark mode:
+          </span>
+          <input
+            class="headerLink"
+            type="checkbox"
+          />
+        </div>
       </div>
     </div>
     <div
